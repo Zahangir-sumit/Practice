@@ -122,3 +122,15 @@ console.log(myArray);
 let objstr = JSON.stringify(personValues);
 console.log(objstr);
 console.log(JSON);
+
+
+// Constructor function
+
+function Car(make, model, color){
+    this.make = make,
+    this.model = model,
+    this.color = color
+};
+
+const carObj = new Car("ford", "frong", "red");
+console.log(carObj.make);
