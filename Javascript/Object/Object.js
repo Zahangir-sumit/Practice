@@ -52,3 +52,73 @@ const p2 = {
 Object.assign(p1,p2);
 
 console.log(p1);
+
+
+// Same memory address shares
+
+const person = {
+  firstName:"John",
+  lastName:"Doe",
+  age:50, eyeColor:"blue"
+}
+
+const x = person;
+
+x.age = 10;
+
+console.log(person.age);
+
+// Add properties
+
+person.nationality = "Bangladeshi";
+
+// Delete Properties
+
+delete person.eyeColor;
+
+// Nested objects
+
+const myobj = {
+    name : "John",
+    age : 35,
+    myCars : {
+        car1 : "BMW",
+        car2 : "Mercedes",
+        car3 : "ford"
+    }
+}
+
+
+// Object method
+
+const personMethod = {
+    firstName: "Dr",
+    lastName: "Sumit",
+    age: 29,
+    fullName: function (){ return this.firstName + " " + this.lastName}
+}
+
+console.log("Name: " + personMethod.fullName());
+console.log("Age: " + personMethod.age);
+
+
+// Display Object
+// Object.values()
+
+const personValues = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+
+const myArray = Object.values(personValues);
+
+let text = myArray.toString();
+
+console.log(myArray);
+
+// Json.stringify
+
+let objstr = JSON.stringify(personValues);
+console.log(objstr);
+console.log(JSON);
