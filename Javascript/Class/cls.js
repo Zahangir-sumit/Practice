@@ -43,3 +43,36 @@ class Model extends Car {
     return this.present() + ', it is a ' + this.model;
   }
 }
+
+
+// static method of class
+
+class CarS {
+  constructor(name) {
+    this.name = name;
+  }
+  static hello() {
+    console.log("im static method");
+  }
+}
+
+const myCar = new CarS("Ford");
+
+CarS.hello();
+
+
+
+for (var k = 0; k < 3; k++) {
+  ((x) => {
+    setTimeout(() => {
+      console.log("fixed var k:", x); 
+    }, x * 1000);
+  })(k);
+}
+
+
+for (var k = 0; k < 3; k++) {
+  setTimeout(() => {
+      console.log("fixed var m:", k); 
+    }, k * 1000);
+}

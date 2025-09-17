@@ -126,11 +126,11 @@ console.log(JSON);
 
 // Constructor function
 
-function Car(make, model, color){
+function CarT(make, model, color){
     this.make = make,
     this.model = model,
     this.color = color
 };
 
-const carObj = new Car("ford", "frong", "red");
+const carObj = new CarT("ford", "frong", "red");
 console.log(carObj.make);
