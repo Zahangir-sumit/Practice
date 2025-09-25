@@ -16,7 +16,8 @@ function createUser(user: User): User{
 
 let c: object;
 
-c = {
+c = { 
     name: "bmw",
-    model: "A8"
-}
+    model: "A8",
+    weight: 205
+} 

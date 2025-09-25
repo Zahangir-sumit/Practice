@@ -5,7 +5,7 @@ function AddTwo(num: number){
 
 AddTwo(5);
 
-let signUpUser = (name: string, email: string, isPaid: boolean) => {
+let signUpUser = (name: string, email: string, isPaid?: boolean) => {
     return true
 }
 
