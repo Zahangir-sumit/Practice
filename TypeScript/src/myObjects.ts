@@ -12,3 +12,11 @@ type User = {
 function createUser(user: User): User{
     return {name : "Jahangir", email: "jahan@gmail.com", age: 23};
 }
+
+
+let c: object;
+
+c = {
+    name: "bmw",
+    model: "A8"
+}
