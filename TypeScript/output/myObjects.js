@@ -4,5 +4,11 @@ function createObj() {
 function createUser(user) {
     return { name: "Jahangir", email: "jahan@gmail.com", age: 23 };
 }
+let c;
+c = {
+    name: "bmw",
+    model: "A8",
+    weight: 205
+};
 export {};
 //# sourceMappingURL=myObjects.js.map
