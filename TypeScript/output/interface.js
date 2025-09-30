@@ -19,5 +19,6 @@ const circle = {
     color: "red"
 };
 console.log(circle);
+const u = { name: "Ali", age: 25 };
 export {};
 //# sourceMappingURL=interface.js.map

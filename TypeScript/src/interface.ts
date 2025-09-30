@@ -55,3 +55,13 @@ const circle: Circle = {
     color: "red"
 }
 console.log(circle);
+
+
+interface User {
+  name: string;
+}
+interface User {
+  age: number;
+}
+
+const u: User = { name: "Ali", age: 25 };
